@@ -52,7 +52,7 @@ acf(diff(train1$IssuesInMonth))
 auto.arima(train1$IssuesInMonth)
 
 
-#modelling
+#ARIMA Model
 model1=arima(train1$IssuesInMonth,order=c(0,1,1))
 summary(model1)
 
