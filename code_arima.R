@@ -63,6 +63,6 @@ predict=predict(model1, n.ahead = 10)
 #error calculation
 error=sum((predict$pred-test1$IssuesInMonth)/test1$IssuesInMonth)*100/10
 
-#predication for fucture
+#predication for future
 predict_future=predict(model,n.ahead=16)
 prediction=predict_future$pred[11:16]
